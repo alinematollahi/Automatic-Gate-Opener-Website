@@ -24,16 +24,15 @@ height: 70%;
 }
 
 #back-base-left {
-    width: 40%;
-    height: 50%;
-    position: relative;
-    left: 30%;
+    width: 30%;
+    height: 40%;
+    margin-left: 35%;
     background-color: rgb(26, 7, 7);
 }
 
 #wall-left-2 {
     width: 100%;
-    height: 50%;
+    height: 60%;
     background-color: brown;
 }
 
@@ -45,7 +44,7 @@ height: 70%;
 
 #set-space-hinge-left{
     width: 100%;
-    height: 60%;
+    height: 50%;
 }
 #hinge-left {
     float: left;
@@ -59,12 +58,11 @@ height: 70%;
     float: left;
     width: 60%;
     height: 15%;
-    background-color: cornflowerblue;
 }
 
 #set-space-doors{
     width: 100%;
-    height: 60%;
+    height: 50%;
 }
 
 #door-left {
@@ -89,19 +87,19 @@ height: 70%;
 
 #edge-left {
     width: 85% ;
-    height: 40%;
+    height: 60%;
     background-color: blueviolet;
 }
 
 #set-space-edges{
     width: 100%;
-    height: 20%;
+    height: 10%;
 }
 
 #edge-right {
     float: right;
     width: 85% ;
-    height: 40%;
+    height: 30%;
     background-color: blueviolet;
 }
 
@@ -113,7 +111,7 @@ height: 70%;
 
 #set-space-hinge-right{
     width: 100%;
-    height: 60%;
+    height: 50%;
 }
 #hinge-right {
     float: left;
@@ -130,16 +128,15 @@ height: 70%;
 }
 
 #back-base-right {
-    width: 40%;
-    height: 50%;
-    position: relative;
-    left: 30%;
+    width: 30%;
+    height: 40%;
+    margin-left: 35%;
     background-color: rgb(26, 7, 7);
 }
 
 #wall-right-2 {
     width: 100%;
-    height: 50%;
+    height: 60%;
     background-color: brown;
 }
 
