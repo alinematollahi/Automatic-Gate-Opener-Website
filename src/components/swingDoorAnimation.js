@@ -21,13 +21,17 @@ function SwingDoorAnimation(props) {
 
             <div id="part-5">
                 <div id="set-space-doors"></div>
-                <div id="door-left"></div>
-                <div id="edges">
+                <div id="door-left-container">
+                    <div id="set-space-door-left"></div>
+                    <div id="door-left"></div>
                     <div id="edge-left"></div>
-                    <div id="set-space-edges"></div>
-                    <div id="edge-right"></div>
                 </div>
-                <div id="door-right"></div>
+
+                <div id="door-right-container">
+                    <div id="edge-right"></div>
+                    <div id="door-right"></div>
+                    <div id="set-space-door-right"></div>
+                </div>
             </div>
 
             <div id="hinge-container-right">
@@ -41,7 +45,7 @@ function SwingDoorAnimation(props) {
             </div>
 
             <div id="wall-right-1"></div>
-            
+
         </div>
     );
 }
