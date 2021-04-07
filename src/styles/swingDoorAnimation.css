@@ -2,7 +2,8 @@
     width: 90vmin;
     height: 90vmin;
     margin: 2vmin auto;
-    background-color: aqua;
+    background-color: rgb(10, 219, 219);
+    border-radius: 10%;
 }
 
 #empty-space{
@@ -14,7 +15,8 @@ height: 50%;
     float: left;
     width: 9.5%;
     height: 15%;
-    background-color: brown;
+    background-color: rgb(161, 102, 62);
+    border-top-right-radius: 5%;
 }
 
 #part-3 {
@@ -33,7 +35,7 @@ height: 50%;
     width: 30%;
     height: 30%;
     margin-left: 35%;
-    background-color: rgb(26, 7, 7);
+    background-color: rgb(66, 64, 68);
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
 }
@@ -41,7 +43,9 @@ height: 50%;
 #wall-left-2 {
     width: 100%;
     height: 60%;
-    background-color: brown;
+    background-color: rgb(161, 102, 62);
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 #hinge-container-left{
@@ -59,7 +63,16 @@ height: 50%;
     width: 100%;
     height: 20%;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(66, 64, 68);
+}
+
+#hinge-left-circle {
+    width: 30%;
+    height: 30%;
+    background-color: rgb(66, 64, 68);
+    border-radius: 50%;
+    border: solid rgb(132, 160, 161);
+    margin: 17.5% auto;
 }
 
 #part-5 {
@@ -107,14 +120,20 @@ height: 50%;
     float: left;
     width: 44.3% ;
     height: 100%;
-    background-color: blueviolet;
+    background-color: rgb(36, 44, 73);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+
 }
 
 #edge-left {
     float: left;
     width: 3.2% ;
     height: 60%;
-    background-color: blueviolet;
+    background-color: rgb(36, 44, 73);
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
 }
 
 #front-base-left{
@@ -123,7 +142,7 @@ height: 50%;
     position: relative;
     top: -150%;
     left: -300%;
-    background-color: crimson;
+    background-color: rgb(66, 64, 68);
 }
 
 
@@ -163,15 +182,20 @@ height: 50%;
     float: left;
     width: 44.4% ;
     height: 100%;
-    background-color: blueviolet;
+    background-color: rgb(36, 44, 73);
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 #edge-right {
     float: left;
     width: 3.2% ;
     height: 30%;
-    background-color: blueviolet;
+    background-color: rgb(36, 44, 73);
     margin-top: 3.15%;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
 }
 
 #front-base-right{
@@ -180,46 +204,8 @@ height: 50%;
     position: relative;
     top: -580%;
     left: 370%;
-    background-color: crimson;
+    background-color: rgb(66, 64, 68);
 }
-
-
-/*
-#door-right {
-    float: left;
-    width: 48% ;
-    height: 20%;
-    background-color: blueviolet;
-
-    animation-name: move-door-right;
-    animation-duration: 2s;
-}
-
-
-
-#edge-left {
-    width: 85% ;
-    height: 60%;
-    background-color: blueviolet;
-    transform: rotate(-90deg);
-    transform-origin: -1485.294% 83.33%;
-}
-
-#set-space-edges{
-    width: 100%;
-    height: 10%;
-}
-
-#edge-right {
-    float: right;
-    width: 85% ;
-    height: 30%;
-    background-color: blueviolet;
-    transform: rotateZ(90deg);
-    transform-origin: 1585.294% -66.67%;
-}
-
-*/
 
 #hinge-container-right{
     float: left;
@@ -236,7 +222,16 @@ height: 50%;
     width: 100%;
     height: 20%;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(66, 64, 68);
+}
+
+#hinge-right-circle {
+    width: 30%;
+    height: 30%;
+    background-color: rgb(66, 64, 68);
+    border-radius: 50%;
+    border: solid rgb(132, 160, 161);
+    margin: 17.5% auto;
 }
 
 #part-7 {
@@ -255,7 +250,7 @@ height: 50%;
     width: 30%;
     height: 30%;
     margin-left: 35%;
-    background-color: rgb(26, 7, 7);
+    background-color: rgb(66, 64, 68);
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
 }
@@ -263,14 +258,17 @@ height: 50%;
 #wall-right-2 {
     width: 100%;
     height: 60%;
-    background-color: brown;
+    background-color: rgb(161, 102, 62);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
 }
 
 #wall-right-1 {
     float: left;
     width: 9.5%;
     height: 15%;
-    background-color: brown;
+    background-color: rgb(161, 102, 62);
+    border-top-left-radius: 5%;
 }
 
 @keyframes move-motor1 {
@@ -291,7 +289,7 @@ height: 50%;
     left: -25%;
     width: 500%;
     height: 240%;
-    background-color: coral;
+    background-color:  rgb(123, 139, 137);
     transform: rotateZ(8deg);
     z-index: 2;
 
@@ -299,6 +297,7 @@ height: 50%;
     animation-duration: 5s;
     animation-iteration-count: 2;
     animation-direction: alternate;
+    border-radius: 5%;
 }
 
 #motor1-part2-set-space {
@@ -319,10 +318,13 @@ height: 50%;
 #motor1-part2 {
     width: 190%;
     height: 60%;
-    background-color: rgb(117, 83, 68);
+    background-color: rgb(141, 145, 150);
     position: relative;
     left: 100%;
     z-index: 3;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+
     animation-name: move-motor1-part2;
     animation-duration: 5s;
     animation-iteration-count: 2;
@@ -352,8 +354,9 @@ height: 50%;
     right: -25%;
     width: 500%;
     height: 240%;
-    background-color: coral;
+    background-color: rgb(123, 139, 137);
     transform: rotateZ(-8deg);
+    border-radius: 5%;
 
     animation-name: move-motor2;
     animation-duration: 4.95s;
@@ -384,10 +387,13 @@ height: 50%;
 #motor2-part2 {
     width: 190%;
     height: 60%;
-    background-color: rgb(117, 83, 68);
+    background-color: rgb(141, 145, 150);
     position: relative;
     left: -190%;
     z-index: 3;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+
     animation-name: move-motor2-part2;
     animation-duration: 4.9s;
     animation-iteration-count: 2;
