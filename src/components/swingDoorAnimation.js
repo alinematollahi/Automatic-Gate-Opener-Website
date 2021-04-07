@@ -10,6 +10,12 @@ function SwingDoorAnimation(props) {
             <div id="wall-left-1"></div>
 
             <div id="part-3">
+                <div id="set-space-back-base-left">
+                    <div id="motor1">
+                        <div id="motor1-part2-set-space"></div>
+                        <div id="motor1-part2"></div>
+                    </div>
+                </div>
                 <div id="back-base-left"></div>
                 <div id="wall-left-2"></div>
             </div>
@@ -24,11 +30,15 @@ function SwingDoorAnimation(props) {
                 <div id="door-left-container">
                     <div id="set-space-door-left"></div>
                     <div id="door-left"></div>
-                    <div id="edge-left"></div>
+                    <div id="edge-left">
+                        <div id="front-base-left"></div>
+                    </div>
                 </div>
 
                 <div id="door-right-container">
-                    <div id="edge-right"></div>
+                    <div id="edge-right">
+                        <div id="front-base-right"></div>
+                    </div>
                     <div id="door-right"></div>
                     <div id="set-space-door-right"></div>
                 </div>
@@ -40,6 +50,12 @@ function SwingDoorAnimation(props) {
             </div>
 
             <div id="part-7">
+                <div id="set-space-back-base-right">
+                    <div id="motor2">
+                        <div id="motor2-part2-set-space"></div>
+                        <div id="motor2-part2"></div>
+                    </div>
+                </div>
                 <div id="back-base-right"></div>
                 <div id="wall-right-2"></div>
             </div>
