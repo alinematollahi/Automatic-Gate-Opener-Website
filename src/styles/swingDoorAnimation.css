@@ -65,30 +65,103 @@ height: 70%;
     height: 50%;
 }
 
+@keyframes move-door-left {
+    from {}
+    to {
+        transform: rotateZ(-90deg);
+    }
+  }
+
+  #door-left-container {
+    float: left;
+    width: 106.4% ;
+    height: 20%;
+    position: relative;
+    left: -55.8%;
+
+    animation-name: move-door-left;
+    animation-duration: 4s;
+  }
+
+  #set-space-door-left {
+    float: left;
+    width: 52.5% ;
+    height: 100%;
+  }
+
 #door-left {
     float: left;
-    width: 48% ;
-    height: 20%;
+    width: 44.3% ;
+    height: 100%;
     background-color: blueviolet;
 }
 
-#edges {
+#edge-left {
     float: left;
-    width: 4%;
-    height: 20%;
+    width: 3.2% ;
+    height: 60%;
+    background-color: blueviolet;
 }
 
+
+@keyframes move-door-right {
+    from {}
+    to {
+        transform: rotateZ(90deg);
+    }
+  }
+
+  #door-right-container {
+    float: left;
+    width: 109.3% ;
+    height: 20%;
+    position: relative;
+    left: 48%;
+    top: -20%;
+
+    animation-name: move-door-right;
+    animation-duration: 4s;
+  }
+
+  #set-space-door-right {
+    float: left;
+    width: 52.4% ;
+    height: 100%;
+  }
+
+#door-right {
+    float: left;
+    width: 44.4% ;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+#edge-right {
+    float: left;
+    width: 3.2% ;
+    height: 30%;
+    background-color: blueviolet;
+    margin-top: 3.15%;
+}
+/*
 #door-right {
     float: left;
     width: 48% ;
     height: 20%;
     background-color: blueviolet;
+
+    animation-name: move-door-right;
+    animation-duration: 2s;
 }
+
+
 
 #edge-left {
     width: 85% ;
     height: 60%;
     background-color: blueviolet;
+    transform: rotate(-90deg);
+    transform-origin: -1485.294% 83.33%;
 }
 
 #set-space-edges{
@@ -101,7 +174,11 @@ height: 70%;
     width: 85% ;
     height: 30%;
     background-color: blueviolet;
+    transform: rotateZ(90deg);
+    transform-origin: 1585.294% -66.67%;
 }
+
+*/
 
 #hinge-container-right{
     float: left;
