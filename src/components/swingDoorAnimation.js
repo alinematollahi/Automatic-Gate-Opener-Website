@@ -22,7 +22,9 @@ function SwingDoorAnimation(props) {
 
             <div id="hinge-container-left">
                 <div id="set-space-hinge-left"></div>
-                <div id="hinge-left"></div>
+                <div id="hinge-left">
+                <div id="hinge-left-circle"></div>
+                </div>
             </div>
 
             <div id="part-5">
@@ -46,7 +48,9 @@ function SwingDoorAnimation(props) {
 
             <div id="hinge-container-right">
                 <div id="set-space-hinge-right"></div>
-                <div id="hinge-right"></div>
+                <div id="hinge-right">
+                    <div id="hinge-right-circle"></div>
+                </div>
             </div>
 
             <div id="part-7">
