@@ -5,7 +5,7 @@ import App from './App';
 import SwingDoorAnimation from './components/swingDoorAnimation';
 
 ReactDOM.render(
-  <SwingDoorAnimation />
+  <App />
   ,
   document.getElementById('root')
 );
