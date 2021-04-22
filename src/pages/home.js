@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
+import { ProductList } from "../components/product";
+import { productService } from "../components/product";
 
-function HomePage() {
-    return(
-        <div>Home Page</div>
-    );
-}
 
-export default HomePage;
+
+export class HomePage extends Component {
+
+      render () {
+        return (
+            <div >
+              HomePage
+            </div>
+        );
+      }
+    
+};
