@@ -1,10 +1,18 @@
 import axios from 'axios';
 
+const apiAddress = 'http://localhost:5000/products/';
+
 export const productService = {
     getProducts: () => {
-        return axios.get('http://localhost:5000/products')
+        return axios.get(apiAddress)
     },
     getProductById: id => {
-       return axios.get(`http://localhost:5000/products/${id}`)
+       return axios.get(apiAddress+id)
+    },
+    addComment :  (productId , comment) => {
+        return axios.post(apiAddress+productId+'/comments',comment)
+    },
+    getComments :  (productId) => {
+        return axios.post(apiAddress+productId+'/comments')
     }
 };
