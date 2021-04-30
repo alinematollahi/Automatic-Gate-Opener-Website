@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { CommentList, CommentCreate } from "../components/comment";
-import { productService } from "../components/product";
+import { addToCart, cartStore, productService } from "../components/product";
 
 export class DetailPage extends Component {
     state = { data: undefined }
@@ -8,7 +8,19 @@ export class DetailPage extends Component {
     async componentDidMount() {
         let id = this.props.match.params.id;
         const { data } = await productService.getProductById(id);
-        this.setState({ data })
+        this.setState({ data });
+
+        this.unsubscribe = cartStore.subscribe(()=>{
+            console.log(cartStore.getState());
+        });
+    }
+
+    addToCartHandler () {
+        cartStore.dispatch(addToCart(this.state.data));
+    }
+
+    componentWillUnmount(){
+        this.unsubscribe();
     }
 
     async submitComment(comment) {
@@ -38,6 +50,8 @@ export class DetailPage extends Component {
                         <h1>{data.title}</h1>
                         <p>{data.desc}</p>
                         <div>{data.price}</div>
+                        <br/>
+                        <button onClick={this.addToCartHandler.bind(this)} className="btn btn-primary">Add to Cart</button>
                     </div>
                 </div>
 
