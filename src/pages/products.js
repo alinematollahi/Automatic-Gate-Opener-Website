@@ -7,10 +7,19 @@ import { productService } from "../components/product";
 export class ProductPage extends Component {
     state = { products: [] };
 
-    async componentDidMount() {
-        const response = await productService.getProducts();
-        this.setState({ products: response.data });
-    }
+    fetchData() {
+        productService
+          .getProducts(this.props.location.search)
+          .then((response) => this.setState({ products: response.data }));
+      }
+    
+      componentDidMount() {
+        this.fetchData();
+      }
+    
+      componentDidUpdate() {
+        this.fetchData();
+      }
 
     render() {
         return (
@@ -19,7 +28,6 @@ export class ProductPage extends Component {
                     <ProductList products={this.state.products} />
                 </div>
             </div>
-
         );
     }
 };
