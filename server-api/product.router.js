@@ -77,6 +77,14 @@ Long stroke of 350mm as standard (or 390mm without stops) making it more adaptab
   ],
 };
 router.get("/", (req, res) => {
+  if(req.query.q){
+    const result = _.filter(data.products, item =>
+      item.title.toLocaleLowerCase().includes(req.query.q.toLocaleLowerCase()) 
+      || 
+      item.desc.toLocaleLowerCase().includes(req.query.q.toLocaleLowerCase()));
+      
+      res.json(result);
+  }
   res.json(data.products);
 });
 
