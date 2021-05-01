@@ -1,5 +1,7 @@
 import React from 'react';
-import {CartIcon} from '../cart'
+import { Link } from 'react-router-dom';
+import {CartIcon} from '../cart';
+import {Search} from './search';
 
 export function Navbar() {
     return (
@@ -32,13 +34,12 @@ export function Navbar() {
                 <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
               </li>
             </ul>
+            <Link to="/cart">
             <div>
               <CartIcon />
             </div>
-            <form className="form-inline my-2 my-lg-0">
-              <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </Link>
+            <Search />
           </div>
         </nav>
       )
