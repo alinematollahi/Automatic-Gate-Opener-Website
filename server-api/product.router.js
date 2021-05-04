@@ -6,7 +6,7 @@ const data = {
     {
       id: '1',
       title: "FAAC 402 CBC Standard Basic Kit",
-      price: "$1800",
+      price: 1800,
       pic:"/pictures/402.jpg",
       desc: `This is the FAAC 402 CBC Standard Basic Kit, 
       which includes 2 FAAC 422 CBAC Swing Gate Opener,
@@ -22,7 +22,7 @@ const data = {
     {
       id: '2',
       title: "FAAC S418 Solar Swing Gate Opener Kit",
-      price: "$1650",
+      price: 1650,
       pic:"/pictures/418.jpg",
       desc: `
       Built-in mechanical stops as standard
@@ -33,7 +33,7 @@ Long stroke of 350mm as standard (or 390mm without stops) making it more adaptab
     {
       id: '3',
       title: "FAAC 412 230V Swing Gate Operator",
-      price: "$1150",
+      price: 1150,
       pic: "/pictures/412.jpg",
       desc: `
       This is the FAAC 412 Kit for Bi-Parting (Dual) Gates. 
@@ -45,7 +45,7 @@ Long stroke of 350mm as standard (or 390mm without stops) making it more adaptab
     {
       id: '4',
       title: "FAAC 415 Basic Kit 115VAC",
-      price: "$1300",
+      price: 1300,
       pic:"/pictures/415.jpg",
       desc: `
       This is the 115VAC (not low voltage) FAAC 415 Basic Single Kit. 
@@ -56,7 +56,7 @@ Long stroke of 350mm as standard (or 390mm without stops) making it more adaptab
     {
       id: '5',
       title: "FAAC 400 CBACR Rapid Basic Kit",
-      price: "$2100",
+      price: 2100,
       pic:"/pictures/400.jpg",
       desc: `
       This is the FAAC 400 CBACR Rapid Basic Single Kit. 
@@ -67,7 +67,7 @@ Long stroke of 350mm as standard (or 390mm without stops) making it more adaptab
     {
       id: '6',
       title: "FAAC 413 230V Swing Gate Operator",
-      price: "$1400",
+      price: 1400,
       pic:"/pictures/413.jpg",
       desc: `
       Electro-mechanical operator for residental swing-leaf gates 
