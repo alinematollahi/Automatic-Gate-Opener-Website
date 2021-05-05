@@ -7,6 +7,7 @@ import { HomePage, ProductPage, DetailPage, CartPage } from './pages';
 import SwingDoorAnimation from './components/swingDoorAnimation';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Navbar } from './components/navbar';
+import { Footer } from './components/footer';
 //import { DetailPage } from './pages/detail';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           </Switch>
         </div>
       </BrowserRouter>
+      <Footer />
     </div >
   );
 }
