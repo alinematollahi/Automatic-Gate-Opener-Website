@@ -15,7 +15,7 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Navbar />
-        <div className="container">
+        <div>
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/products" component={ProductPage} />
