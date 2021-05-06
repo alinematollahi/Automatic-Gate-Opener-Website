@@ -11,6 +11,12 @@ width: 100%;
 height: 50%;
 }
 
+#title {
+    text-align: center;
+    font-size: 8vmin;
+    color: rgb(33, 33, 70);
+}
+
 #wall-left-1 {
     float: left;
     width: 9.5%;
@@ -398,4 +404,16 @@ height: 50%;
     animation-duration: 4.9s;
     animation-iteration-count: 2;
     animation-direction: alternate;
+}
+
+#bottom-part{
+    position: absolute;
+    top: 65vmin;
+    margin-left: 3vmin;
+    font-size: 3.5vmin;
+}
+
+.step{
+    font-weight: 700;
+    color: rgb(33, 33, 70);
 }
