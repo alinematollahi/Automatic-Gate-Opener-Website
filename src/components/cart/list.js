@@ -5,7 +5,7 @@ export function Cart({ products }) {
 
     if (!products || !products.length) {
         return (
-            <div style={{ marginTop: '30vh', fontSize: 40 }} className="text-center">Cart is Empty</div>
+            <div style={{ marginTop: '30vh', marginBottom: '30vh', fontSize: 40 }} className="text-center">Cart is Empty</div>
         )
     }
 
