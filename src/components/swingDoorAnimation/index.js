@@ -5,7 +5,13 @@ function SwingDoorAnimation(props) {
     return (
         <div id="swing-door-animation-container">
 
-            <div id="empty-space"></div>
+            <div id="empty-space">
+                <div id="title">
+                    Automatic Gate Opener
+                    <br/>
+                    Top View
+                </div>
+            </div>
 
             <div id="wall-left-1"></div>
 
@@ -23,7 +29,7 @@ function SwingDoorAnimation(props) {
             <div id="hinge-container-left">
                 <div id="set-space-hinge-left"></div>
                 <div id="hinge-left">
-                <div id="hinge-left-circle"></div>
+                    <div id="hinge-left-circle"></div>
                 </div>
             </div>
 
@@ -65,6 +71,13 @@ function SwingDoorAnimation(props) {
             </div>
 
             <div id="wall-right-1"></div>
+
+            <div id="bottom-part">
+                <span className="step">Step 1 : </span>Opening the left door<br/>
+                <span className="step">Step 2 : </span>Opening the right door<br/>
+                <span className="step">Step 3 : </span>Closing the right door<br/>
+                <span className="step">Step 4 : </span>Closing the left door<br/>
+            </div>
 
         </div>
     );
