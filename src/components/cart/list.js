@@ -3,11 +3,16 @@ import { cartStore, removeFromCart, addQuantity, reduceQuantity } from '../produ
 
 export function Cart({ products }) {
 
-    if (!products || !products.length) {
+    
+
+    if (!products || (+products.length)<2) {
         return (
             <div style={{ marginTop: '30vh', marginBottom: '30vh', fontSize: 40 }} className="text-center">Cart is Empty</div>
         )
     }
+
+    var subtotal = products.find(item => !item.id);
+    var prdct = products.filter(item => item.id)
 
     const removeHandler = (product) => {
         cartStore.dispatch(removeFromCart(product))
@@ -24,7 +29,7 @@ export function Cart({ products }) {
     return (
 
         <div className="row">
-            <div className="col9">
+            <div className="col-9">
                 <table className="table">
                     <thead>
                         <tr>
@@ -38,7 +43,7 @@ export function Cart({ products }) {
                     </thead>
                     <tbody>
                         {
-                            products.map((product, index) =>
+                            prdct.map((product, index) =>
                                 <tr key={index}>
                                     <th scope="row">{index + 1}</th>
                                     <td>
@@ -59,7 +64,7 @@ export function Cart({ products }) {
                     </tbody>
                 </table>
             </div>
-            <div className="col3 mx-auto">
+            <div className="col-3 mx-auto">
                 <table className="table table-dark" style={{ marginBottom: 0 }}>
                     <thead>
                         <tr>
@@ -70,15 +75,15 @@ export function Cart({ products }) {
                     <tbody >
                         <tr>
                             <th scope="row">Subtotal</th>
-                            <td>{products.subtotal}</td>
+                            <td>{'$ '+subtotal}</td>
                         </tr>
                         <tr>
                             <th scope="row">Tax(5%)</th>
-                            <td>Jacob</td>
+                            <td>{'$ '+(subtotal*0.05)}</td>
                         </tr>
                         <tr>
                             <th scope="row" style={{ fontSize: 25 }}>Total</th>
-                            <td colspan="2"> </td>
+                            <td colspan="2" style={{ fontSize: 25 }}> {'$ '+(subtotal+(subtotal*0.05))}</td>
                         </tr>
                     </tbody>
                 </table>
