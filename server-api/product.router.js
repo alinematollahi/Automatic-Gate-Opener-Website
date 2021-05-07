@@ -15,8 +15,8 @@ const data = {
       The FAAC 402 CBC Standard is for swing gates up to 10 feet and 900 lbs. 
       30 cycles per hour.`,
       comments: [
-        {author: 'Jennifer', text: `Parents bought this for my sister and this is perfect for her to start on it's good for light-medium gaming. With school converting to online it's perfect as well. This computer also has good battery life away from the charger while might use with heavy use not so much it's good though. Overall the computer is good for it's current price and an amazing deal.`},
-        {author: 'Kimberly Engel', text: 'Absolutely amazing laptop! Runs games with zero lag. I was lucky to get it for $579, and would recommend checking this frequently as it goes super fast at that price.'}
+        {author: 'Peter', text: 'It was a powerful automatic gate opener.'},
+        {author: 'Leonardo', text: 'Absolutely amazing gate opener!'}
       ]
     },
     {
