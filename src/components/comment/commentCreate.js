@@ -40,7 +40,8 @@ export function CommentCreate(props) {
         <form onSubmit={submitHandler}>
             <div className="form-group">
                 <label>Your Name</label>
-                <input value={state.comment.auther || ''} onChange={changeHandler} name="auther" type="text" />
+                <br/>
+                <input value={state.comment.auther || ''} onChange={changeHandler}  className="form-control" name="auther" type="text" />
                 <small className="form-text text-danger">{state.errors.auther}</small>
             </div>
             <div className="form-group">
@@ -48,7 +49,7 @@ export function CommentCreate(props) {
                 <textarea value={state.comment.text || ''} onChange={changeHandler} name="text" className="form-control" rows="4"></textarea>
                 <small className="form-text text-danger">{state.errors.text}</small>
             </div>
-            <button type="submit" className="btn btn-primary"> Send</button>
+            <button type="submit" className="btn btn-primary" style={{marginBottom:'5Vh',width:'20%'}}>Send Comment</button>
         </form>
     );
 }
