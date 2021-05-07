@@ -1,6 +1,6 @@
 #swing-door-animation-container {
-    width: 90vmin;
-    height: 90vmin;
+    width: 80vmin;
+    height: 80vmin;
     margin: 2vmin auto;
     background-color: rgb(10, 219, 219);
     border-radius: 10%;
@@ -13,7 +13,7 @@ height: 50%;
 
 #title {
     text-align: center;
-    font-size: 8vmin;
+    font-size: 7vmin;
     color: rgb(33, 33, 70);
 }
 
@@ -408,9 +408,9 @@ height: 50%;
 
 #bottom-part{
     position: absolute;
-    top: 65vmin;
+    top: 58vmin;
     margin-left: 3vmin;
-    font-size: 3.5vmin;
+    font-size: 3vmin;
 }
 
 .step{
