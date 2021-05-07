@@ -16,7 +16,7 @@ export class CartIcon extends Component {
                 <img src='/pictures/cart.png' width='30' className="mt-20" />
                 {this.state.count>0 &&
                 <span style={{position:'absolute',marginTop:-5,marginLeft:-10}} className="badge badge-danger badge-pill">
-                    {this.state.count}
+                    {((+this.state.count)-1)>0 && (+this.state.count)-1}
                 </span>
                 }
             </div>
