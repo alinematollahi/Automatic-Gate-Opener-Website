@@ -28,7 +28,7 @@ Then, run the command below on cmd, in main directory to run React app on port 3
 
 <hr />
 
-### Introducing Web Pages
+### Web Pages Introduction
 
 #### Home Page
 
