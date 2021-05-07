@@ -46,19 +46,21 @@ export class DetailPage extends Component {
                     <div className="col-5">
                         <img src={data.pic} width="100%" />
                     </div>
-                    <div className="col-7 mt-10">
+                    <div className="col-7 mt-5">
                         <h1>{data.title}</h1>
                         <p>{data.desc}</p>
-                        <div>{data.price}</div>
+                        <div style={{fontSize:20,color:'green',fontWeight:700}}>{'$ '+data.price}</div>
                         <br/>
                         <button onClick={this.addToCartHandler.bind(this)} className="btn btn-primary">Add to Cart</button>
                     </div>
                 </div>
 
                 <div className="row">
-                    <div className="col-10 mx-auto">
+                    <div className="col-10 mx-auto" style={{border:'3px solid rgb(33, 33, 70)',borderRadius:'15px',marginBottom:'10vh'}}>
+                        <span style={{fontSize:30,fontWeight:700 ,color:'rgb(33, 33, 70)',textAlign:'center',display:'block'}}>Users Comments</span>
                         <CommentList comments={data.comments || []} />
                         <hr className="my-5" />
+                        <span style={{fontSize:30,fontWeight:700 ,color:'rgb(33, 33, 70)',textAlign:'center',display:'block'}}>Add New Comment</span>
                         <CommentCreate onComment={this.submitComment.bind(this)} />
                     </div>
                 </div>
