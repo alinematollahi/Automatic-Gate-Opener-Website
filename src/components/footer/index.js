@@ -4,8 +4,8 @@ export function Footer() {
     return (
         <div className="row bg-dark text-white">
             <div className="col-4" style={footerStyle}>
-                CONTACT
-                <br /><br />
+                <h4>CONTACT</h4>
+                <br />
                 Email : info@example.com
                 <br />
                 Address : Copenhagen capital region
@@ -14,16 +14,16 @@ export function Footer() {
                 <br />
             </div>
             <div className="col-4" style={footerStyle}>
-                ABOUT COMPANY
-                <br /><br />
+                <h4>ABOUT COMPANY</h4>
+                <br />
                 This text is for test This text is for test<br />
                 This text is for test This text is for test<br />
                 This text is for test This text is for test<br />
                 This text is for test This text is for test<br />
             </div>
             <div className="col-4" style={footerStyle}>
-                TREND PRODUCTS
-                <br /><br />
+                <h4>TREND PRODUCTS</h4>
+                <br />
                 <a href='#'>FAAC 402 CBC Standard Basic Kit</a>
                 <br />
                 <a href='#'>FAAC 412 230V Swing Gate Operator</a>
