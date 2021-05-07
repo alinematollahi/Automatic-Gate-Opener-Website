@@ -60,6 +60,7 @@ In the first part, some thecnical information is provided. Following, there is a
 
 #### Cart Page
 
+In the cart page, users can see products which added to cart, change their quantities or remove them.
 
 <img src="public/pictures/7.JPG" />
 
